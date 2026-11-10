@@ -17,17 +17,19 @@ public class Series {
 
     public Series(String nome) {
         this.nome = nome;
-        this.plataforma = "Plataforma indefinida";
+        this.plataforma = "plataforma indefinida";
     }
 
 
     //setters getters e tostring
+
 
     @Override
     public String toString() {
         return "Series{" +
                 "nome='" + nome + '\'' +
                 ", plataforma='" + plataforma + '\'' +
+                ", nota=" + nota +
                 '}';
     }
 

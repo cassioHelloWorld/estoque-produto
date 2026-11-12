@@ -1,4 +1,4 @@
-package main;
+package series;
 
 import utils.Input;
 
@@ -20,7 +20,7 @@ public class Main {
         Input.msgGui(s2.toString());
 
         //catalogo
-        Catalogo c1 = new Catalogo();
+        Catalog c1 = new Catalog();
 
         c1.addSeries(s1);
         c1.addSeries(s2);

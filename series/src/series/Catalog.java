@@ -1,10 +1,10 @@
-package main;
+package series;
 
 import utils.Input;
 
 import java.util.ArrayList;
 
-public class Catalogo {
+public class Catalog {
     //lista
     ArrayList<Series> lista = new ArrayList<>();
 

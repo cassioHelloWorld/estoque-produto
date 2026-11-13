@@ -21,4 +21,13 @@ public class Catalog {
             }
         }return null;
     }
+
+    //to string
+
+    @Override
+    public String toString() {
+        return "Catalog{" +
+                "lista=" + lista +
+                '}';
+    }
 }

@@ -16,6 +16,15 @@ public class Task {
     }
 
     //sets e gets
+
+    @Override
+    public String toString() {
+        return "Task{" +
+                "description='" + description + '\'' +
+                ", completed=" + completed +
+                '}';
+    }
+
     public String getDescription() {
         return description;
     }

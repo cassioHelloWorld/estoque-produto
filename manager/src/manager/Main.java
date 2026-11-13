@@ -21,18 +21,31 @@ public class Main {
 
             if (compTask == 1) {
                 t1.setCompleted(true);
-            }
-            else if(compTask == 2) {
+            } else if (compTask == 2) {
                 t1.setCompleted(false);
-            } else{
+            } else {
                 Input.msgGui("Valor invalido");
             }
-        } while (compTask == 1 || compTask == 2);
+        } while (compTask != 1 && compTask != 2);
 
         //adicionando tarefas
         tasks.add(t1);
         tasks.add(t2);
         tasks.add(t3);
+
+        //percorrer e remover concluidas
+        for (int i = 0; i < tasks.size(); i++) {
+        if(tasks.get(i).isCompleted()){
+            tasks.remove(i);
+            i--;
+        }
+        }
+
+        //imprimindo tarefas pendentes
+        Input.msgGui("Tarefas pendentes...");
+        for (Task tt : tasks){
+            Input.msgGui(tt.getDescription());
+        }
 
     }
 }
